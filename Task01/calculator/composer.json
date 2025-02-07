@@ -1,0 +1,28 @@
+{
+    "name": "ks561/calculator",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ks561\\Calculator\\": "src/"
+        },
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "bin": [
+        "bin/calculator"
+    ],
+    "authors": [
+        {
+            "name": "shuryginaKN",
+            "email": "ks5614741@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10"
+    }
+}
