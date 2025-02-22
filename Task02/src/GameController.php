@@ -6,7 +6,6 @@ use shuryginaKN\calculator\View;
 use shuryginaKN\calculator\Database;
 use shuryginaKN\calculator\Game;
 
-
 class GameController
 {
     private Database $db;
@@ -35,7 +34,5 @@ class GameController
 
         $html = View\displayResult($playerName, $expression, $result, $playerAnswer, $isCorrect);
         echo $html;
-
     }
-      
 }

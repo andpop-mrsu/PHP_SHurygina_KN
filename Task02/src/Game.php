@@ -35,10 +35,8 @@ class Game
                 'expression' => $expression,
                 'result' => $result
             ];
-
         } catch (\Throwable $e) {
             return ['expression' => null, 'result' => null];
         }
-
     }
 }

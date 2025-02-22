@@ -13,9 +13,7 @@ $game = new Game();
 $gameController = new GameController($db, $game);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     if (isset($_POST['player_name'])) {
-
         $playerName = $_POST['player_name'];
         $expressionData = $game->generateExpression();
 
@@ -25,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo View\displayGameForm($playerName, $expressionData['expression'], $expressionData['result'], $db);
         }
     } elseif (isset($_POST['player_answer'])) {
-
         $playerName = $_POST['player_name_hidden'];
         $expression = $_POST['expression_hidden'];
         $result = (float)$_POST['result_hidden'];
@@ -37,7 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo View\displayStartScreen();
     }
-
 } else {
     echo View\displayStartScreen();
 }

@@ -53,9 +53,9 @@ class Database
             ");
             $stmt->execute([$playerId, $expression, $correctAnswer, $playerAnswer, (int)$isCorrect]);
 
-            $this->pdo->commit(); 
+            $this->pdo->commit();
         } catch (\PDOException $e) {
-            $this->pdo->rollBack(); 
+            $this->pdo->rollBack();
             echo "Ошибка при сохранении результата игры: " . $e->getMessage();
             die();
         }
@@ -83,5 +83,4 @@ class Database
             return [];
         }
     }
-
 }
