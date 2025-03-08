@@ -1,0 +1,28 @@
+{
+    "name": "ks561/calculator",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ks561\\Calculator\\": "src/"
+        },
+        "files": [
+            "src/GameController.php",
+            "src/Database.php",
+            "src/Game.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "shuryginaKN",
+            "email": "ks5614741@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10"
+    }
+}
